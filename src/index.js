@@ -19,7 +19,7 @@ function loadWidget(config) {
 
     (function registerTools() {
         tools["switch-model"].callback = () => model.loadOtherModel();
-        tools["switch-texture"].callback = () => model.loadRandModel();
+        tools["switch-texture"].callback = () => model.changeTexture();
         if (!Array.isArray(config.tools)) {
             config.tools = Object.keys(tools);
         }
